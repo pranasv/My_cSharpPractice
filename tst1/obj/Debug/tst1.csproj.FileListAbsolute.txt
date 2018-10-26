@@ -1,0 +1,7 @@
+C:\Users\pranas\OneDrive\My_cSharpPractice1\tst1\bin\Debug\tst1.exe.config
+C:\Users\pranas\OneDrive\My_cSharpPractice1\tst1\bin\Debug\tst1.exe
+C:\Users\pranas\OneDrive\My_cSharpPractice1\tst1\bin\Debug\tst1.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\tst1\obj\Debug\tst1.csprojAssemblyReference.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\tst1\obj\Debug\tst1.csproj.CoreCompileInputs.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\tst1\obj\Debug\tst1.exe
+C:\Users\pranas\OneDrive\My_cSharpPractice1\tst1\obj\Debug\tst1.pdb
