@@ -10,15 +10,11 @@ namespace tst1
     {
         static void Main(string[] args)
         {
-            var item = new Item();
-            new Item();
-            item.AddSubItem();
-            item.AddSubItem();
-            item.AddSubItem();            
-            Console.WriteLine(item);
-            Console.WriteLine(Item.id[1]);
-            Item.id[2].AddSubItem(1);            
-            Console.WriteLine(Item.id[2]);
+            var item = new Item("Myfirst Item");                   
+            item.AddSubItem();          
+            new Item("anoteher one Item");
+            Item.ItemsCollection[2].AddSubItem(3);
+            Item.PrintAllItems();
             Console.ReadKey();
         }
     }

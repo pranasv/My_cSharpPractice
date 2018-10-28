@@ -7,31 +7,42 @@ using System.Threading.Tasks;
 namespace tst1
 {
     class Item
-    {
-        public static List<Item> id = new List<Item>();
+    {       
+        public static Dictionary<int, Item> ItemsCollection { get; private set; } = new Dictionary<int, Item>();
         private int ID { get; set; }
-        private List<int> FatherID { get;  set; } = new List<int>();
-        private List<int> ChildID { get;  set; } = new List<int>();
+        private List<int> FatherID { get; set; } = new List<int>();
+        private List<int> ChildID { get; set; } = new List<int>();
+        private static int ID_Counter = 1;
+
         public string Name { get; set; }
         public string Description { get; set; }
-        public Item()
+        public Item(string name = "New Item", string description ="")
         {
-            this.ID = ID_Counter.value;
-            ID_Counter.value++;
-            id.Add(this);
+            this.ID = ID_Counter;
+            ID_Counter++;
+            ItemsCollection.Add(ID, this);
+            Name = name;
+            Description = description;
         }
         public void AddSubItem(int subitemID = 0)
         {
             if (subitemID == 0)
             {
-                var newitem = new Item();
+                var newitem = new Item();                
                 ChildID.Add(newitem.ID);
-                newitem.FatherID.Add(this.ID);
+                newitem.FatherID.Add( this.ID);
             }
             else
             {
-                ChildID.Add(subitemID);
-                Item.id[subitemID].FatherID.Add(this.ID);
+                ChildID.Add( subitemID);
+                ItemsCollection[subitemID].FatherID.Add(this.ID);              
+            }
+        }
+        public static void PrintAllItems()
+        {
+            foreach (KeyValuePair<int, Item> item in ItemsCollection)
+            {
+                Console.WriteLine(item.Value);
             }
         }
         public override string ToString()
