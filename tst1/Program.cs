@@ -14,6 +14,7 @@ namespace tst1
             item.AddSubItem();          
             new Item("anoteher one Item");
             Item.ItemsCollection[2].AddSubItem(3);
+            Item.ItemsCollection[2].AddSubItem(3,5);
             Item.PrintAllItems();
             Console.ReadKey();
         }

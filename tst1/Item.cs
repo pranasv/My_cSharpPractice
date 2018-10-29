@@ -10,11 +10,9 @@ namespace tst1
     {
         public static Dictionary<int, Item> ItemsCollection { get; private set; } = new Dictionary<int, Item>();
         private int ID { get; set; }
-        private List<int> FatherID { get; set; } = new List<int>();
-        //private List<int> ChildID { get; set; } = new List<int>();
-        private Dictionary<int, int> ChildItem = new Dictionary<int, int>(); // Subitem ID & Qty in Item
+        private List<int> FatherID { get; set; } = new List<int>();        
+        private Dictionary<int, int> SubItem = new Dictionary<int, int>(); // Subitem ID & Qty in Item
         private static int ID_Counter = 1;
-
         public string Name { get; set; }
         public string Description { get; set; }
         public Item(string name = "New Item", string description = "")
@@ -29,14 +27,20 @@ namespace tst1
         {
             if (subitemID == 0)
             {
-                var newitem = new Item();
-                ChildItem.Add(newitem.ID, qty);
+                var newitem = new Item();              
+                SubItem.Add(newitem.ID, qty);
                 newitem.FatherID.Add(this.ID);
             }
             else
             {
-                ChildItem[subitemID] = qty;
-                ItemsCollection[subitemID].FatherID.Add(this.ID);
+                int total;
+                SubItem.TryGetValue(subitemID, out total);
+                total += qty;
+                SubItem[subitemID] = total;
+                if (!ItemsCollection[subitemID].FatherID.Contains(this.ID))
+                {
+                    ItemsCollection[subitemID].FatherID.Add(this.ID);
+                }
             }
         }
         public static void PrintAllItems()
@@ -57,14 +61,14 @@ namespace tst1
                 }
             }
             string Contains = "";
-            if (ChildItem != null)
+            if (SubItem != null)
             {
-                foreach (KeyValuePair<int, int> item in ChildItem)
+                foreach (KeyValuePair<int, int> item in SubItem)
                 {
-                    Contains += item.Key + "; ";
+                    Contains += item.Key + ", "+item.Value+"; ";
                 }
             }
-            return "ID: " + ID + "   Name: " + Name + "   Description: " + Description + "   Used in Items(ID): " + WhereUsed + "   Contains subitems(ID): " + Contains;
+            return "ID: " + ID + "   Name: " + Name + "   Description: " + Description + "   Used in Items(ID): " + WhereUsed + "   Contains subitems(ID, qty): " + Contains;
         }
 
     }
