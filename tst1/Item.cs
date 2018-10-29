@@ -7,16 +7,17 @@ using System.Threading.Tasks;
 namespace tst1
 {
     class Item
-    {       
+    {
         public static Dictionary<int, Item> ItemsCollection { get; private set; } = new Dictionary<int, Item>();
         private int ID { get; set; }
         private List<int> FatherID { get; set; } = new List<int>();
-        private List<int> ChildID { get; set; } = new List<int>();
+        //private List<int> ChildID { get; set; } = new List<int>();
+        private Dictionary<int, int> ChildItem = new Dictionary<int, int>(); // Subitem ID & Qty in Item
         private static int ID_Counter = 1;
 
         public string Name { get; set; }
         public string Description { get; set; }
-        public Item(string name = "New Item", string description ="")
+        public Item(string name = "New Item", string description = "")
         {
             this.ID = ID_Counter;
             ID_Counter++;
@@ -24,18 +25,18 @@ namespace tst1
             Name = name;
             Description = description;
         }
-        public void AddSubItem(int subitemID = 0)
+        public void AddSubItem(int subitemID = 0, int qty = 1)
         {
             if (subitemID == 0)
             {
-                var newitem = new Item();                
-                ChildID.Add(newitem.ID);
-                newitem.FatherID.Add( this.ID);
+                var newitem = new Item();
+                ChildItem.Add(newitem.ID, qty);
+                newitem.FatherID.Add(this.ID);
             }
             else
             {
-                ChildID.Add( subitemID);
-                ItemsCollection[subitemID].FatherID.Add(this.ID);              
+                ChildItem[subitemID] = qty;
+                ItemsCollection[subitemID].FatherID.Add(this.ID);
             }
         }
         public static void PrintAllItems()
@@ -56,11 +57,11 @@ namespace tst1
                 }
             }
             string Contains = "";
-            if (ChildID != null)
+            if (ChildItem != null)
             {
-                foreach (int item in ChildID)
+                foreach (KeyValuePair<int, int> item in ChildItem)
                 {
-                    Contains += item + "; ";
+                    Contains += item.Key + "; ";
                 }
             }
             return "ID: " + ID + "   Name: " + Name + "   Description: " + Description + "   Used in Items(ID): " + WhereUsed + "   Contains subitems(ID): " + Contains;
