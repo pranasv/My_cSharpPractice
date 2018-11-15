@@ -1,0 +1,9 @@
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\bin\Debug\DataLayer1.dll
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\bin\Debug\DataLayer1.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BusinessLayer\obj\Debug\BusinessLayer.pdb

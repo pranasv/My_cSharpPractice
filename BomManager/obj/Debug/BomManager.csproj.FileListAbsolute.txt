@@ -1,0 +1,12 @@
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\bin\Debug\BomManager.exe.config
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\bin\Debug\BomManager.exe
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\bin\Debug\BomManager.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\obj\Debug\BomManager.csprojAssemblyReference.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\obj\Debug\BomManager.csproj.CoreCompileInputs.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\obj\Debug\BomManager.csproj.CopyComplete
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\obj\Debug\BomManager.exe
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\obj\Debug\BomManager.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\bin\Debug\DataLayer1.dll
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\bin\Debug\DataLayer1.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\bin\Debug\BusinessLayer.dll
+C:\Users\pranas\OneDrive\My_cSharpPractice1\BomManager\bin\Debug\BusinessLayer.pdb

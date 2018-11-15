@@ -1,0 +1,4 @@
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer\obj\Debug\netstandard2.0\DataLayer_.csprojAssemblyReference.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer\obj\Debug\netstandard2.0\DataLayer_.csproj.CoreCompileInputs.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer\obj\Debug\netstandard2.0\DataLayer_.AssemblyInfoInputs.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer\obj\Debug\netstandard2.0\DataLayer_.AssemblyInfo.cs

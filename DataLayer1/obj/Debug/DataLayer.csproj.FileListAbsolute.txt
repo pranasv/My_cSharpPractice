@@ -1,0 +1,6 @@
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer1\obj\Debug\DataLayer.csproj.CoreCompileInputs.cache
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer1\bin\Debug\DataLayer1.dll
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer1\bin\Debug\DataLayer1.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer1\obj\Debug\DataLayer1.dll
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer1\obj\Debug\DataLayer1.pdb
+C:\Users\pranas\OneDrive\My_cSharpPractice1\DataLayer1\obj\Debug\DataLayer.csprojAssemblyReference.cache
